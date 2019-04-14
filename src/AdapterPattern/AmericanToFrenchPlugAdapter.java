@@ -1,29 +1,28 @@
 package AdapterPattern;
 
 /**
- *
- * @author chdiallo
+ * @author Cherif
  */
 public class AmericanToFrenchPlugAdapter implements FrenchPlugInterface {
 
     private AmericanPlug americanPlug;
-    private String toothOne;
-    private String toothTwo;
-    private String toothThree;
+    private String fingerOne;
+    private String fingerTwo;
+    private String fingerThree;
 
-    public AmericanToFrenchPlugAdapter(String toothThree, AmericanPlug americanPlug) {
+    public AmericanToFrenchPlugAdapter(String fingerThree, AmericanPlug americanPlug) {
         this.americanPlug = americanPlug;
-        this.toothOne = this.americanPlug.getFingerOne();
-        this.toothTwo = this.americanPlug.getFingerTwo();
+        this.fingerOne = this.americanPlug.getFingerOne();
+        this.fingerTwo = this.americanPlug.getFingerTwo();
 
-        this.toothThree = toothThree;
+        this.fingerThree = fingerThree;
     }
 
     @Override
     public String chargeMonPortable() {
-        return "Success!! ... I charged my American phone in France.  My charger had the following teeth:\n"
-                + toothOne + "\n"
-                + toothTwo + "\n"
-                + toothThree;
+        return "Success!! ... I charged my American phone in France.  My charger had the following fingers:\n"
+                + fingerOne + "\n"
+                + fingerTwo + "\n"
+                + fingerThree;
     }
 }

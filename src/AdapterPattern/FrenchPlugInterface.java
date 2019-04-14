@@ -2,7 +2,7 @@ package AdapterPattern;
 
 /**
  *
- * @author chdiallo
+ * @author Cherif
  */
 public interface FrenchPlugInterface {
     String chargeMonPortable();
