@@ -11,5 +11,7 @@ public class Client {
         tl.printStatus();
         tl.previousLight();
         tl.printStatus();
+        tl.nextLight();
+        tl.printStatus();
     }
 }
